@@ -87,10 +87,11 @@ export default function Header() {
         </div>
       </div>
 
-      {/* Bottom Bar (reserved for future content) */}
-      <nav className="flex flex-row items-center justify-center px-5 h-[56px] bg-white w-full">
-        <div className="max-w-4xl w-full">
-          <div className="flex flex-row gap-3 items-center ">
+      {/* Bottom Bar */}
+      <nav className="flex flex-row items-center justify-center px-5 h-[56px] bg-white w-full text-sm">
+        <div className="flex flex-row items-center justify-center md:justify-between max-w-4xl w-full h-full">
+          {/* Left */}
+          <div className="hidden md:flex flex-row gap-3 items-center">
             <Image
               width={24}
               height={24}
@@ -107,17 +108,43 @@ export default function Header() {
               />
             </div>
           </div>
-          <div>
+          {/* Middle */}
+          <div className="flex flex-row gap-5">
             <Link href="/">Home</Link>
-            <Link href="/">
-              New Products{" "}
-              <span className="py-1 px-2 rounded-full bg-orange text-white">
-                New
+            <Link href="/" className="flex flex-row gap-1 h-fit">
+              New Products
+              <span className="hidden md:flex w-fit py-1 px-3 rounded-full bg-orange text-white text-xs">
+                NEW
               </span>
             </Link>
-            <Link href="/">Promotions</Link>
+            <Link href="/" className="flex flex-row gap-1 h-fit">
+              Promotions
+              <span className="hidden md:flex w-fit py-1 px-3 rounded-full bg-orange text-white text-xs">
+                HOT
+              </span>
+            </Link>
           </div>
-          <div></div>
+          {/* Right */}
+          <div className="hidden md:flex flex-row gap-5">
+            <Link href="/" className="flex flex-row gap-2">
+              <Image
+                width={24}
+                height={24}
+                src={`${imagePaths.icon}/truck.svg`}
+                alt="Truck Icon"
+              />
+              <span className="hidden lg:flex">Track Your Order</span>
+            </Link>
+            <Link href="/" className="flex flex-row gap-2">
+              <Image
+                width={24}
+                height={24}
+                src={`${imagePaths.icon}/user.svg`}
+                alt="Truck Icon"
+              />
+              <span className="hidden lg:flex">Sign In/Register</span>
+            </Link>
+          </div>
         </div>
       </nav>
     </header>
