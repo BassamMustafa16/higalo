@@ -12,23 +12,12 @@ export default function SearchForm() {
     { id: 2, name: "Games & Toys" },
   ];
 
-  const dummySubcategories = [
-    { id: 1, name: "Honey & Detox Tea", category: "Tea House" },
-    { id: 2, name: "Tea & Coffee Acc", category: "Tea House" },
-    { id: 3, name: "Loose Tea & Herbs", category: "Tea House" },
-    { id: 4, name: "Tiki", category: "Tea House" },
-    { id: 5, name: "For Girls", category: "Games & Toys" },
-    { id: 6, name: "Lego & Puzzle", category: "Games & Toys" },
-    { id: 7, name: "Educational Toys", category: "Games & Toys" },
-    { id: 8, name: "Others", category: "Games & Toys" },
-  ];
-
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
   };
   return (
     <form
-      className="hidden md:flex flex-row gap-1 flex-3"
+      className="hidden md:flex flex-row gap-1 flex-3 max-w-xl"
       onSubmit={handleSubmit}
     >
       <div className="relative flex-4">
@@ -51,7 +40,9 @@ export default function SearchForm() {
             height={6}
             src={`${imagePaths.icon}/dropdownArrow.svg`}
             alt="dropdown arrow"
-            className={`${isShowCategories && "rotate-x-180"} translate-y-1/2 transition-transform duration-300 `}
+            className={`${
+              isShowCategories && "rotate-x-180"
+            } translate-y-1/2 transition-transform duration-300 `}
           />
         </button>
         {/* Categories dropdown Content */}
@@ -65,11 +56,7 @@ export default function SearchForm() {
           <ul className="">
             <li className="p-2 cursor-pointer">All products</li>
             {dummyCategories.map((category) => (
-              <DropdownCategory
-                key={category.id}
-                category={category}
-                dummySubcategories={dummySubcategories}
-              />
+              <DropdownCategory key={category.id} category={category} />
             ))}
           </ul>
         </div>
