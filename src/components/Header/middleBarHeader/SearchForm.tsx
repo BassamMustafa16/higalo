@@ -17,7 +17,7 @@ export default function SearchForm() {
   };
   return (
     <form
-      className="hidden md:flex flex-row gap-1 flex-3 max-w-xl"
+      className="flex flex-row gap-1 flex-3 max-w-xl"
       onSubmit={handleSubmit}
     >
       <div className="relative flex-4">
@@ -31,7 +31,7 @@ export default function SearchForm() {
         {/* Category Button */}
         <button
           type="button"
-          className="absolute flex flex-row gap-4 justify-between items-center top-0 right-0 h-full px-4 rounded-lg bg-[#F5F5F5] text-[#555555] text-sm cursor-pointer"
+          className="hidden absolute md:flex flex-row gap-4 justify-between items-center top-0 right-0 h-full px-4 rounded-lg bg-[#F5F5F5] text-[#555555] text-sm cursor-pointer"
           onClick={() => setIsShowCategories(!isShowCategories)}
         >
           Category

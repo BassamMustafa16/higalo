@@ -5,7 +5,7 @@ import SearchForm from "./middleBarHeader/SearchForm";
 import Cart from "./middleBarHeader/Cart";
 export default function HeaderMiddleBar() {
   return (
-    <div className="h-[112px] flex flex-row gap-5 lg:gap-15 w-full justify-between items-center px-4 md:px-8 lg:px-16 xl:px-32 2xl:px-64 bg-darkBlue ">
+    <div className="h-[62px] lg:h-[140px] border-white flex flex-row gap-5 lg:gap-15 w-full justify-between items-center px-4 md:px-8 lg:px-16 xl:px-32 2xl:px-64 bg-darkBlue ">
       {/* Logo */}
       <Link href="/" aria-label="Home" className="flex items-center">
         <div className="w-[92px] h-[62px] lg:w-[140px] lg:h-[94px] relative">
@@ -21,10 +21,18 @@ export default function HeaderMiddleBar() {
       </Link>
 
       {/* Search Bar */}
-      <SearchForm />
-
+      <div className="hidden md:block flex-1">
+        <SearchForm />
+      </div>
       {/* Favorite & Cart Icons */}
       <div className="flex flex-row gap-2">
+        {/* <Image
+          width={22}
+          height={22}
+          src={`${imagePaths.icon}/search.svg`}
+          alt="Search Icon"
+          
+        /> */}
         <Link href="/" aria-label="Favorites">
           <Image
             width={24}

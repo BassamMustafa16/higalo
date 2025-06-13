@@ -23,7 +23,7 @@ export default function Navbar() {
         </div>
       </div>
       {/* Middle */}
-      <div className="flex flex-row gap-5">
+      <div className="flex flex-row justify-center w-full md:w-fit gap-5">
         <Link href="/">Home</Link>
         <Link href="/" className="flex flex-row gap-1 h-fit">
           New Products
