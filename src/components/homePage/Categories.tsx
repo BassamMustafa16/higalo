@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function Categories() {
   return (
-    <div className="px-4 md:px-8 lg:px-16 xl:px-32 2xl:px-64 mt-5">
+    <div className="px-4 md:px-8 lg:px-16 xl:px-32 2xl:px-64">
       {/* Heading */}
       <div className="flex flex-row justify-between">
         <h2 className="text-darkBlue md:text-xl lg:text-2xl font-semibold">

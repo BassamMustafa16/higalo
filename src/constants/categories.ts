@@ -5,7 +5,7 @@ const categories = [
   { id: 4, name: "Camping & Outdoors" },
   { id: 5, name: "Health & Personal Care" },
   { id: 6, name: "Games & Toys" },
-  { id: 7, name: "Home Acc" },
+  { id: 7, name: "Home Accessories" },
   { id: 8, name: "Kids & Babies" },
 ];
 

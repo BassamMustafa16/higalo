@@ -1,24 +1,26 @@
-import imagePaths from "@/constants/imagePaths";
-import poroducts from "@/constants/products";
+import Link from "next/link";
 import Image from "next/image";
-
-export default function BestSeller() {
-  // Sort products descending by itemsSold
-  const sortedProducts = [...poroducts]
-    .sort((a, b) => b.itemsSold - a.itemsSold)
-    .slice(0, 4);
-
+import poroducts from "@/constants/products";
+import imagePaths from "@/constants/imagePaths";
+export default function NewArrivals() {
+  const filterdProducts = poroducts.filter(
+    (product) => product.ribbon === "New"
+  );
   return (
-    <div className="px-4 md:px-8 lg:px-16 xl:px-32 2xl:px-64 py-5 bg-[#F7F7F7]">
+    <div className="px-4 md:px-8 lg:px-16 xl:px-32 2xl:px-64">
       {/* Heading */}
-      <div>
+      <div className="flex flex-row justify-between">
         <h2 className="text-darkBlue md:text-xl lg:text-2xl font-semibold">
-          Best Sellers of The Month
+          New Arrivals
         </h2>
+        {/* Navigators */}
+        <div className="flex flex-row gap-4 items-center text-orange">
+          <Link href="/">See all</Link>
+        </div>
       </div>
       {/* Content */}
       <div className="mt-5 grid grid-cols-1 lg:grid-cols-2 gap-5">
-        {sortedProducts.map((product) => (
+        {filterdProducts.map((product) => (
           <div
             key={product.id}
             className="flex flex-col md:flex-row gap-5 w-[100%] bg-white rounded-2xl h-fit"

@@ -33,6 +33,10 @@ html {
   background-color: #FFE923;
   color: black;
 }
+.discount{
+  background-color: #FF8154;
+  color: white;
+}
 .sold-out{
   background-color: #D6D6D6;
   color: black;
