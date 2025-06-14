@@ -17,7 +17,7 @@ export default function Navbar() {
           <Image
             width={10}
             height={6}
-            src={`${imagePaths.icon}/dropdownArrow.svg`}
+            src={`${imagePaths.icon}/arrow.svg`}
             alt="dropdown Arrow Icon"
           />
         </div>

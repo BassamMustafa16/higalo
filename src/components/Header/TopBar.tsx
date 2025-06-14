@@ -60,7 +60,7 @@ export default function HeaderTopBar() {
             className={`pointer-events-none absolute right-1 top-1/2 -translate-y-1/2`}
           >
             <Image
-              src={`${imagePaths.icon}/dropdownArrow.svg`}
+              src={`${imagePaths.icon}/arrow.svg`}
               alt="Dropdown Arrow"
               width={10}
               height={6}
@@ -81,7 +81,7 @@ export default function HeaderTopBar() {
             className={`pointer-events-none absolute right-1 top-1/2 -translate-y-1/2`}
           >
             <Image
-              src={`${imagePaths.icon}/dropdownArrow.svg`}
+              src={`${imagePaths.icon}/arrow.svg`}
               alt="Dropdown Arrow"
               width={10}
               height={6}

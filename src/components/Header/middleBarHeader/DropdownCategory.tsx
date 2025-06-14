@@ -34,7 +34,7 @@ export default function DropdownCategory({ category }: DropdownCategoryProps) {
         <Image
           width={10}
           height={6}
-          src={`${imagePaths.icon}/dropdownArrow.svg`}
+          src={`${imagePaths.icon}/arrow.svg`}
           alt="Dropdown arrow"
           className={`${
             isShowSubcategory && "rotate-x-180"

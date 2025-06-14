@@ -3,14 +3,12 @@
 import imagePaths from "@/constants/imagePaths";
 import Image from "next/image";
 import DropdownCategory from "./DropdownCategory";
+import categories from "@/constants/categories";
 import { useState } from "react";
 
 export default function SearchForm() {
   const [isShowCategories, setIsShowCategories] = useState(false);
-  const dummyCategories = [
-    { id: 1, name: "Tea House" },
-    { id: 2, name: "Games & Toys" },
-  ];
+
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -38,7 +36,7 @@ export default function SearchForm() {
           <Image
             width={10}
             height={6}
-            src={`${imagePaths.icon}/dropdownArrow.svg`}
+            src={`${imagePaths.icon}/arrow.svg`}
             alt="dropdown arrow"
             className={`${
               isShowCategories && "rotate-x-180"
@@ -55,7 +53,7 @@ export default function SearchForm() {
         >
           <ul className="">
             <li className="p-2 cursor-pointer">All products</li>
-            {dummyCategories.map((category) => (
+            {categories.map((category) => (
               <DropdownCategory key={category.id} category={category} />
             ))}
           </ul>

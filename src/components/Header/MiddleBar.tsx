@@ -26,13 +26,6 @@ export default function HeaderMiddleBar() {
       </div>
       {/* Favorite & Cart Icons */}
       <div className="flex flex-row gap-2">
-        {/* <Image
-          width={22}
-          height={22}
-          src={`${imagePaths.icon}/search.svg`}
-          alt="Search Icon"
-          
-        /> */}
         <Link href="/" aria-label="Favorites">
           <Image
             width={24}

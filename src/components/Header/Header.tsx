@@ -1,5 +1,5 @@
-import HeaderTopBar from "./HeaderTopBar";
-import HeaderMiddleBar from "./HeaderMiddleBar";
+import HeaderTopBar from "./TopBar";
+import HeaderMiddleBar from "./MiddleBar";
 import Navbar from "./NavBar";
 import SearchForm from "./middleBarHeader/SearchForm";
 

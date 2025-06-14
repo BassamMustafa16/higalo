@@ -18,8 +18,22 @@ a {
 @theme {
   --color-orange: #f69520;
   --color-darkBlue: #1d2554;
+  --color-darkOrange: #B36C17;
 }
 
 html {
   font-family: var(--font-work-sans), sans-serif;
+}
+
+.new{
+  background-color: #F69520;
+  color: white;
+}
+.favorite{
+  background-color: #FFE923;
+  color: black;
+}
+.sold-out{
+  background-color: #D6D6D6;
+  color: black;
 }
