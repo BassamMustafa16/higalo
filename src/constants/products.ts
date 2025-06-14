@@ -13,7 +13,7 @@ const poroducts = [
     id: 2,
     name: "Cup Holder",
     price: 12.0,
-    image: "Cup Holder.png",
+    image: "Cup Holder.svg",
     ribbon: "New",
     describtion: "Incredible mug Capacity: 400ml.",
     inventory: 50,
