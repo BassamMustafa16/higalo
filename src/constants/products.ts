@@ -3,7 +3,7 @@ const poroducts = [
     id: 1,
     name: "Portable Neck Fan",
     price: 10.0,
-    image: "Portable Neck Fan.png",
+    image: "Portable Neck Fan.svg",
     ribbon: "New",
     describtion:
       "The portable fan have two wind head, Can feel more powerful airflow.",
@@ -22,7 +22,7 @@ const poroducts = [
     id: 3,
     name: "Kids Bottle",
     price: 7.0,
-    image: "Kids Bottle.png",
+    image: "Kids Bottle.svg",
     ribbon: "Favorite",
     describtion: "Bottle with silicone size: 17.5 x 8.5 cm",
     inventory: 20,
@@ -31,7 +31,7 @@ const poroducts = [
     id: 4,
     name: "Aroma Fragrance Diffuser",
     price: 7.0,
-    image: "Aroma Fragrance Diffuser.png",
+    image: "Aroma Fragrance Diffuser.svg",
     ribbon: "",
     describtion:
       "Aroma Fragrance Diffuser (20 ml) Set of 4 pcs including fragrances of : lavender , rose , ocean , jasmine",
