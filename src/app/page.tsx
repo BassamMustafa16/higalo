@@ -3,6 +3,7 @@ import BestSeller from "@/components/homePage/BestSeller";
 import Categories from "@/components/homePage/Categories";
 import Hero from "@/components/homePage/Hero";
 import NewArrivals from "@/components/homePage/NewArrivals";
+import Policies from "@/components/homePage/Policies";
 
 export default function Home() {
   return (
@@ -17,6 +18,8 @@ export default function Home() {
       <BannerSlider />
       {/* New Arrivals */}
       <NewArrivals />
+      {/* Policies */}
+      <Policies />
     </div>
   );
 }

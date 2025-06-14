@@ -18,7 +18,7 @@ export default function Categories() {
       </div>
       {/* Content */}
       <div className="flex flex-row md:grid md:grid-cols-4 gap-6 mt-5 overflow-auto">
-        {categories.map((category) => (
+        {categories.slice(0, 8).map((category) => (
           <Link key={category.id} href="/">
             <div className="relative max-md:w-[40vw]  aspect-square rounded-lg overflow-hidden flex items-end">
               <Image

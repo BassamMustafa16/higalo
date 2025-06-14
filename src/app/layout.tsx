@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { Work_Sans } from "next/font/google"; // Add this line
 import "./globals.css";
 import Header from "@/components/Header/Header";
+import Footer from "@/components/Footer/Footer";
 
 // const geistSans = Geist({
 //   variable: "--font-geist-sans",
@@ -35,6 +36,7 @@ export default function RootLayout({
       <body className={`${workSans.variable} font-sans`}>
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );

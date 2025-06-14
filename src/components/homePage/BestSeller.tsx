@@ -1,6 +1,5 @@
-import imagePaths from "@/constants/imagePaths";
 import poroducts from "@/constants/products";
-import Image from "next/image";
+import ProductImage from "./ProductImage";
 
 export default function BestSeller() {
   // Sort products descending by itemsSold
@@ -24,14 +23,7 @@ export default function BestSeller() {
             className="flex flex-col md:flex-row gap-5 w-[100%] bg-white rounded-2xl h-fit"
           >
             {/* Image */}
-            <div className="relative flex-1 aspect-square">
-              <Image
-                src={`${imagePaths.products}/${product.image}`}
-                alt={product.name}
-                fill
-                sizes="100vw"
-              />
-            </div>
+            <ProductImage product={product} />
             {/* Text Content */}
             <div className="flex flex-col flex-1 md:flex-2 lg:flex-1 gap-3 md:justify-center pb-3 px-4  ">
               <p
