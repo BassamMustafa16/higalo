@@ -20,7 +20,7 @@ export default function BestSeller() {
         {sortedProducts.map((product) => (
           <div
             key={product.id}
-            className="flex flex-col md:flex-row gap-5 w-[100%] bg-white rounded-2xl h-fit"
+            className="flex flex-col md:flex-row gap-5 w-[100%] bg-white rounded-2xl overflow-hidden h-fit"
           >
             {/* Image */}
             <ProductImage product={product} />
